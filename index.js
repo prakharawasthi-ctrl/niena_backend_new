@@ -1,7 +1,18 @@
 const express = require("express");
 const { MongoClient, ServerApiVersion } = require("mongodb");
+//app.js
 
+const serverless = require("serverless-http");
 const app = express();
+const router = express.Router();
+
+router.get("/", (req, res) => {
+    res.send("App is running..");
+});
+
+app.use("/.netlify/functions/app", router);
+module.exports.handler = serverless(app);
+
 const port = 5000;
 
 // Middleware to parse JSON requests
