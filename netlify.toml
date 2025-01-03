@@ -1,6 +1,0 @@
-[build]
-  command = "npm run build"   # Optional: Build step if needed (e.g., bundling)
-  publish = "build"           # The folder containing the output of your build step
-
-[functions]
-  directory = "netlify-functions"  # Directory for your serverless functions
