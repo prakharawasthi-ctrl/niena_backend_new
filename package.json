@@ -8,8 +8,10 @@
     "netlify-cli": "^17.38.1",
     "netlify-lambda": "^2.0.16",
     "serverless-http": "^3.2.0"
-  },
-  "scripts": {
-    "build": "netlify deploy --prod"
+  }
+  ,"scripts": {
+  "start": "node server.js",
+  "build": "tsc babel src -d dist webpack --mode production" 
 }
+
 }
