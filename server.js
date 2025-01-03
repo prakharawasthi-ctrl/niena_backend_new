@@ -20,7 +20,7 @@ app.use(express.json());
 
 // CORS configuration
 const corsOptions = {
-  origin: "https://localhost:5000", // Allow requests from your frontend
+  origin: "*", // Allow requests from your frontend
   methods: "GET,POST,PUT,DELETE", // Allow these methods
   allowedHeaders: "Content-Type,Authorization", // Allow these headers
 };
