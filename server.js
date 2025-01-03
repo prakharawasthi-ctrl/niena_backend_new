@@ -20,7 +20,7 @@ app.use(express.json());
 
 // CORS configuration
 const corsOptions = {
-  origin: "niena-backend-new-adov.vercel.app", // Allow requests from your frontend
+  origin: "http://niena-backend-new-adov.vercel.app", // Allow requests from your frontend
   methods: "GET,POST,PUT,DELETE", // Allow these methods
   allowedHeaders: "Content-Type,Authorization", // Allow these headers
 };
