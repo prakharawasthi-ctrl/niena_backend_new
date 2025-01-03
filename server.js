@@ -20,7 +20,7 @@ app.use(express.json());
 
 // CORS configuration
 const corsOptions = {
-  origin: "http://localhost:3000", // Allow requests from your frontend
+  origin: "niena-backend-new-adov.vercel.app", // Allow requests from your frontend
   methods: "GET,POST,PUT,DELETE", // Allow these methods
   allowedHeaders: "Content-Type,Authorization", // Allow these headers
 };
