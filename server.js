@@ -10,7 +10,7 @@ router.get("/", (req, res) => {
   res.send("App is running..");
 });
 
-app.use("/.netlify/functions/app", router);
+// app.use("/.netlify/functions/app", router);
 module.exports.handler = serverless(app);
 
 const port = 5000;
